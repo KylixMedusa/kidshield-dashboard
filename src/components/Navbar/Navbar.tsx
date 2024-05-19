@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <NavbarNext className="border-b border-divider">
+    <NavbarNext className="border-b border-divider px-4">
       <NavbarBrand>
         <p className="font-bold text-lg">Hi, {user?.name}</p>
       </NavbarBrand>
