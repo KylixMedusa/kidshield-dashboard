@@ -32,7 +32,7 @@ const FilterSettingsForm = () => {
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (!imageFilterMode || !filterStrictness || !isExtensionEnabled) {
+    if (!imageFilterMode || !filterStrictness) {
       toast.error("Please fill all the required fields.");
       return;
     }
