@@ -1,0 +1,39 @@
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100dvw;
+}
+
+.login-background {
+  background: linear-gradient(135deg, rgb(255 255 255 / 6%) 50%, transparent 0),
+    linear-gradient(-135deg, rgb(255 255 255 / 2%) 50%, transparent 0);
+  background-size: 12em 12em;
+  background-position: center center;
+  background-color: #dc2b6b;
+
+  .login-card {
+    // add backdrop filter
+    background: none;
+    backdrop-filter: blur(2px);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.6);
+      // backdrop-filter: blur(10px);
+      z-index: -1;
+    }
+  }
+}
