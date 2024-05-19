@@ -11,7 +11,7 @@ import AppProvider from "./context/AppProvider.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   (
-    <BrowserRouter>
+    <BrowserRouter basename="/web">
       <AppProvider>
         <App />
         <Toaster />
