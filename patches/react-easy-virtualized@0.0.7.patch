@@ -1,0 +1,14 @@
+diff --git a/package.json b/package.json
+index 5f111abc37638a1a9d615cb6911ee37045bfe0fa..20aa4e94d2e8a52498074018d3b364e71417499e 100644
+--- a/package.json
++++ b/package.json
+@@ -5,7 +5,8 @@
+   "types": "dist/index.d.ts",
+   "exports": {
+     "require": "./dist/cjs.js",
+-    "import": "./dist/esm.js"
++    "import": "./dist/esm.js",
++    "types": "./dist/index.d.ts"
+   },
+   "scripts": {
+     "build": "rm -rf dist && rollup -c",

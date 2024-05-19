@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  react-easy-virtualized@0.0.7:
+    hash: oi6csbkfma53d5yjfbmo6j5tli
+    path: patches/react-easy-virtualized@0.0.7.patch
+
 importers:
 
   .:
@@ -34,7 +39,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-easy-virtualized:
         specifier: ^0.0.7
-        version: 0.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 0.0.7(patch_hash=oi6csbkfma53d5yjfbmo6j5tli)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react-hot-toast:
         specifier: ^2.4.1
         version: 2.4.1(csstype@3.1.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -5687,7 +5692,7 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-easy-virtualized@0.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-easy-virtualized@0.0.7(patch_hash=oi6csbkfma53d5yjfbmo6j5tli)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)

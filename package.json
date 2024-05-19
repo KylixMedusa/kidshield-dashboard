@@ -38,5 +38,10 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "react-easy-virtualized@0.0.7": "patches/react-easy-virtualized@0.0.7.patch"
+    }
   }
 }
