@@ -1,10 +1,14 @@
 import { ImageFilterMode } from "../types/user";
 
 const dispatchEventToExtension = (event: string, data: unknown) => {
-  chrome.runtime.sendMessage(import.meta.env.VITE_EXTENSION_ID, {
-    type: event,
-    payload: data,
-  });
+  try {
+    chrome.runtime?.sendMessage(import.meta.env.VITE_EXTENSION_ID, {
+      type: event,
+      payload: data,
+    });
+  } catch (err) { 
+    console.log(err);
+  }
 };
 
 const setValueToExtension = ({
