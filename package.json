@@ -1,8 +1,18 @@
 {
   "name": "kidshield-dashboard",
-  "private": true,
-  "version": "0.0.0",
+  "description": "Dashboard to manage KidShield",
+  "version": "1.0.0",
   "type": "module",
+  "author": "KylixMedusa",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "tailwindcss",
+    "eslint",
+    "prettier"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
